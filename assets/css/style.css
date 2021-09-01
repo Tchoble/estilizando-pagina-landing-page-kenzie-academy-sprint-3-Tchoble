@@ -158,7 +158,7 @@ a:hover{
     
 }
 span{
-    padding-top:15px: ;
+    padding-top:15px ;
     margin: 10px;
     text-align: center;
     font-size: 19px;
@@ -379,7 +379,19 @@ main{}
   
 
 /* MEDIA QUERIES */
-    @media screen and (min-width: 400px) {}
+    @media screen and (min-width: 400px){
+        section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+
+            
+            
+        }
+    }
   
-    @media screen and (min-width: 800px) {}
+    @media screen and (min-width: 800px) {
+           }
 /* MEDIA QUERIES */
