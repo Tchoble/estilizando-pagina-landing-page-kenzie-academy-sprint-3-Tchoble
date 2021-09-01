@@ -32,34 +32,312 @@ family=Lato -> Títulos, textos
 :root{}
   
 /* GERAL */
-html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul{
+html, body, figure, div, input, textarea, p, h1, h3, h4, h5, h6, ul{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'lato', sans-serif;
     list-style: none;
 }
-img{
-    max-width: 800px;
+
+
+#titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: lighter;
+    font-size: 63px;
+    margin-bottom: 0px;
 }
-div.flex{
+
+.topo{
+    background: url('../img/background-destaque.webp');
+    height: 450px;
+    width: 100%;
+  
+}
+
+#sub{
+    font-size: 24px; 
+}
+
+.text1{
+    font-size: 19px;
+}
+
+.secaoDestaque{
+    text-align: center;
+    font-size: 63px;
+    margin-bottom: 0px;
+    
+}
+
+.secaoDestaque p {
+    text-align: center;
+    font-size: 21px;
+    font-family: 'lato' ,sans-serif;
+    font-weight: lighter;
+    
+}
+.secaoDestaqueFormulario button{
+    
+    background-color: #007aff;
+    border: none;
+    color: white;
+    padding: 1px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0;
+}
+
+nav{
+    
+    background:#00043e;
+    height: 80px;
+    width: 100%;
+   
+   
+}
+
+li a{
+    padding: 0 30px;
+    height: 40px;
+    border-bottom-width: 20px;
+    padding-bottom: 0px;
+    padding-top: 20px;
+    margin-top: 10px;
+    border-top-width: 10px;
+}
+
+li a:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+nav ul{
     display: flex;
+    direction: ltr;
+    color: beige;
+    float: right;
+    margin: 0 30px 50px 0px;
+}
+figure{
+    width: 60px;
+    height: 60px;
+}
+img{
+    max-width: 500px;
+}
+a{  
+    display: flex;
+    color: white;
+    text-decoration: none;
+    text-align: right;
+    font-size: 13px;
+    transition: 1s;
+    
+}
+a:hover{
+    background: #007aff
+}
+.flex-col1, .flex-col2{
+    display: inline-block;
+    width: 100%;
+    height: 400px;
+    
+}
+
+.flex-col1{
+    float: left;
+    width: 50%;
+    height: 350px;
+    
+    font-family: 'lato', sans-serif;
+    font-weight: initial;
+    font-size: 19px;
+    
+}
+span{
+    padding-top:15px: ;
+    margin: 10px;
+    text-align: center;
+    font-size: 19px;
+    font-weight: 400;
+    color: gray;
+}
+.flex-col2{
+    float: right;
+    width: 50%;
+    height: 350px;
+    
+    
+}
+
+
+.flex-col3{
+    float: left;
+    width: 50%;
+    height: 350px;
+    
+    background: #cacaca;
+    font-family: 'lato', sans-serif;
+    font-weight: initial;
+    font-size: 19px;
+}
+
+.flex-col4{
+    position: relative;
+    float: right;
+    width: 50%;
+    height: 350px;
+    top:0px;
+    
+    background: #cacaca;
+}
+
+
+/*
+
+.flex-col3, .flex-col4{
+    width: 49%;
+    height: 350px;
+    background: rgb(73, 179, 11);
+
+
+}
+
+.python{
+    width: 250px;
+    height: 200px;
+    float: inline-start;
+    
+}
+*/
+.js{
+    position: relative;
+    left: 50px;
+    top: 50px
+    
+}
+
+.python{
+        position: relative;
+        left: 50px;
+        top: 25px
+}
+
+
+.courses{
+
+}
+
+div.flex{
+    
 }
 div.full-container{
     width: 100%;
     max-width: 1850px;
     margin:0 auto;
 }
-div.large-container{
+div.large-container img{
     width: 100%;
     max-width: 1170px;
-    margin:0 auto;
+    margin:15px;
+    margin-top: 67px;
+    margin-left: 20px;
+    
+    
 }
 div.container{
     width: 100%;
     max-width: 1140px;
     margin:0 auto;
 }
+
+.flex{
+    
+}
+.flex-col h2{
+    position: relative;
+    left: 650px;
+        top: 55px
+
+}
+.form-input-model{
+    border-style: none;
+}
+
+form {
+ 
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-right: 450px;
+    padding-left: 470px;
+    width: 450px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: none;
+    background-color: #cacaca;
+}
+label {
+    
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font: 'lato', sans-serif;
+
+    
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    
+    border: none;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /* Para dar espaço suficiente para digitar algum texto */
+    height: 1em;
+
+    /* Para permitir aos usuários redimensionarem qualquer textarea verticalmente. Ele não funciona em todos os browsers */
+    resize: vertical;
+}
+
+footer {
+    text-align: center;
+    color: royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* GERAL */
   
 /* HTML */
@@ -75,9 +353,13 @@ header{}
 /* HEADER */
   
 /* FOOTER */
-footer{}
+footer a {
+    text-align: center;
+    color: royalblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 /* FOOTER */
-
+    
 /* INICIAL */
 main{}
 /* INICIAL */
