@@ -61,6 +61,7 @@ html, body, figure, div, input, textarea, p, h1, h3, h4, h5, h6, ul{
 
 .text1{
     font-size: 19px;
+    list-style: circle;
 }
 
 .secaoDestaque{
@@ -118,15 +119,18 @@ nav ul{
     display: flex;
     direction: ltr;
     color: beige;
-    float: right;
     margin: 0 30px 50px 0px;
 }
 figure{
     width: 60px;
     height: 60px;
+    
 }
+    
 img{
-    max-width: 500px;
+    width: 150px;
+    max-width: 100%;
+
 }
 a{  
     display: flex;
@@ -148,10 +152,8 @@ a:hover{
 }
 
 .flex-col1{
-    float: left;
     width: 50%;
     height: 350px;
-    
     font-family: 'lato', sans-serif;
     font-weight: initial;
     font-size: 19px;
@@ -166,35 +168,32 @@ span{
     color: gray;
 }
 .flex-col2{
-    float: right;
     width: 50%;
     height: 350px;
-    
-    
 }
 
 
 .flex-col3{
-    float: left;
-    width: 50%;
-    height: 350px;
-    
     background: #cacaca;
     font-family: 'lato', sans-serif;
     font-weight: initial;
     font-size: 19px;
+    
+
 }
 
 .flex-col4{
-    position: relative;
-    float: right;
-    width: 50%;
-    height: 350px;
-    top:0px;
-    
     background: #cacaca;
+    text-align: left;
 }
-
+.teste {
+ background: #cacaca;
+ display: flex;
+ flex-direction: column;
+ text-align: center;
+ align-items: center;
+ 
+}
 
 /*
 
@@ -214,21 +213,23 @@ span{
 }
 */
 .js{
-    position: relative;
-    left: 50px;
-    top: 50px
-    
+ margin-top: 50px;
 }
 
 .python{
-        position: relative;
-        left: 50px;
-        top: 25px
+    width: 250px;
+    height: 200px;
+    
+      
+
 }
 
 
 .courses{
-
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
 }
 
 div.flex{
@@ -255,13 +256,13 @@ div.container{
 }
 
 .flex{
-    
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
 }
 .flex-col h2{
-    position: relative;
-    left: 650px;
-        top: 55px
-
+  
 }
 .form-input-model{
     border-style: none;
@@ -313,6 +314,7 @@ footer {
     text-align: center;
     color: royalblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: auto;
 }
 
 
@@ -380,18 +382,10 @@ main{}
 
 /* MEDIA QUERIES */
     @media screen and (min-width: 400px){
-        section {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding: 20px;
-
-            
-            
-        }
-    }
+  }
+    
   
     @media screen and (min-width: 800px) {
            }
+  
 /* MEDIA QUERIES */
