@@ -48,50 +48,9 @@ html, body, figure, div, input, textarea, p, h1, h3, h4, h5, h6, ul{
     font-family: 'lato', sans-serif;
     list-style: none;
 }
-
-
-
 .text1{
     font-size: 19px;
     list-style: circle;
-}
-
-    
-img{
-    width: 200px;
-    max-width: 100%;
-
-}
-
-
-
-.courses{
-display: flex;
-flex-direction: column;
-align-items: center;
-text-align: center;
-}
-
-div.flex{
-    
-}
-div.full-container{
-    width: 100%;
-    max-width: 1850px;
-    margin:0 auto;
-}
-
-div.container{
-    width: 100%;
-    max-width: 1140px;
-    margin:0 auto;
-}
-
-.flex{
-    align-items: center;
-    flex-direction: column;
-    display: flex;
-    text-align: center;
 }
 
 .form-input-model{
@@ -199,6 +158,12 @@ body{
         color: rgb(96, 112, 156);
         margin: 0 30px 50px 0px;
 }
+
+img{
+    width: 200px;
+    max-width: 100%;
+
+}
 /* BODY */
   
 /* HEADER */
@@ -271,6 +236,32 @@ span{
     height: 150px;
     
 }
+div.full-container{
+    width: 100%;
+    max-width: 1850px;
+    margin:0 auto;
+}
+
+div.container{
+    width: 100%;
+    max-width: 1140px;
+    margin:0 auto;
+}
+
+.flex{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+
+.courses{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 .secaoCursos h2, p{
     margin: 25px auto 50px auto;
     text-align: center;
